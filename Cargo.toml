@@ -1,0 +1,9 @@
+[package]
+
+name = "hello_world"
+version = "0.0.1"
+authors = ["NikSun <s@sfmblog.cn>"]
+
+[dependencies]
+
+rand = "*"

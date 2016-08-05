@@ -1,8 +1,16 @@
 [package]
 
-name = "hello_world"
+name = "study"
 version = "0.0.1"
 authors = ["NikSun <s@sfmblog.cn>"]
+
+[[bin]]
+name = "guess-number"
+path = "./src/guess-number/main.rs"
+
+[[bin]]
+name = "dining-philosophers"
+path = "./src/dining-philosophers/main.rs"
 
 [dependencies]
 

@@ -1,6 +1,6 @@
 [package]
 
-name = "study"
+name    = "study"
 version = "0.0.1"
 authors = ["NikSun <s@sfmblog.cn>"]
 
@@ -11,6 +11,11 @@ path = "./src/guess-number/main.rs"
 [[bin]]
 name = "dining-philosophers"
 path = "./src/dining-philosophers/main.rs"
+
+[lib]
+name       = "embed"
+crate-type = ["dylib"]
+path       = "./src/embed/main.rs"
 
 [dependencies]
 

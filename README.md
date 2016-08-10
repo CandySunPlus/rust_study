@@ -27,3 +27,9 @@ $ cd -
 $ node ./src/main.js # use rust embed library
 $ node ./src/pure.js # use nodejs cluster
 ```
+
+### generics-traits
+
+```zsh
+$ cargo run generics-traits
+```

@@ -12,6 +12,10 @@ path = "./src/guess-number/main.rs"
 name = "dining-philosophers"
 path = "./src/dining-philosophers/main.rs"
 
+[[bin]]
+name = "generics-traits"
+path = "./src/generics-traits/main.rs"
+
 [lib]
 name       = "embed"
 crate-type = ["dylib"]

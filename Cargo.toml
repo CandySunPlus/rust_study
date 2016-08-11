@@ -16,6 +16,10 @@ path = "./src/dining-philosophers/main.rs"
 name = "generics-traits"
 path = "./src/generics-traits/main.rs"
 
+[[bin]]
+name = "function"
+path = "./src/function/main.rs"
+
 [lib]
 name       = "embed"
 crate-type = ["dylib"]

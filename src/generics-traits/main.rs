@@ -1,42 +1,45 @@
-use std::f64::consts;
+// use std::f64::consts;
+use std::ops::Mul;
 
-trait HasArea {
-    fn area(&self) -> f64;
+trait HasArea<T> {
+    fn area(&self) -> T;
 }
 
-struct Circle {
-    radius: f64,
+// struct Circle<T> {
+//     radius: T,
+// }
+//
+// impl<T> HasArea<T> for Circle<T> 
+// where T: Mul<Output=T> + Copy {
+//     fn area(&self) -> T {
+//         consts::PI * (self.radius * self.radius)
+//     }
+// }
+
+struct Square<T> {
+    side: T,
 }
 
-impl HasArea for Circle {
-    fn area(&self) -> f64 {
-        consts::PI * (self.radius * self.radius)
-    }
-}
-
-struct Square {
-    side: f64,
-}
-
-impl HasArea for Square {
-    fn area(&self) -> f64 {
+impl<T> HasArea<T> for Square<T>
+where T: Mul<Output=T> + Copy {
+    fn area(&self) -> T {
         self.side * self.side
     }
 }
 
-fn print_area<T: HasArea>(shape: T) {
-    println!("This shape has an area of {}", shape.area());
-}
+// fn print_area<T: HasArea>(shape: T) {
+//     println!("This shape has an area of {}", shape.area());
+// }
 
 pub fn main() {
-    let c = Circle {
-        radius: 1.0f64,
-    };
+    // let c = Circle {
+    //     radius: 1.0f64,
+    // };
 
     let s = Square {
         side: 1.0f64
     };
 
-    print_area(c);
-    print_area(s);
+    // println!("This shape has an area of {}", c.area());
+    println!("This shape has an area of {}", s.area());
 }

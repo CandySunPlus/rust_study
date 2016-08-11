@@ -32,6 +32,6 @@ fn main() {
     assert_eq!(6, answer);
 
     let b = Baz;
-    Bar::f(&b);
+    <Baz as Bar>::f(&b);
     Foo::f(&b);
 }

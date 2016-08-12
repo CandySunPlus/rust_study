@@ -16,7 +16,7 @@ pub fn main() {
 
     write_html!(&mut out,
         html[
-            head[title["Macros guide"]]
+            head[title["Macros guide"] hello["world"]]
             body[h1["Macros are the best!"]]
         ]);
 

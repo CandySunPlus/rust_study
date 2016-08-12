@@ -20,6 +20,10 @@ path = "./src/generics-traits/main.rs"
 name = "function"
 path = "./src/function/main.rs"
 
+[[bin]]
+name = "macros"
+path = "./src/macros/main.rs"
+
 [lib]
 name       = "embed"
 crate-type = ["dylib"]
